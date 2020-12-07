@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력 양식 만들기</title>
+</head    >
+<body>
+	<!-- 서버 데이터를 전송하려면 form 태그 -->
+	<!-- method 전송방식, action : 폼을 처리할 페이지 주소 -->
+	<form method = "POST"
+		action="user_form.html">
+		<label id = "name">이름</label>
+		<!-- name 속성 --> 서버 전송시 서버가 확인할변수명 -->
+		<input type = "text"
+					id ="name"
+					name = "name"
+					placeholder="이름을 입력하세요">
+		<br/>
+		<label id ="password">비밀번호</label>
+		<input type ="password"
+					id = "password"
+					name="password"
+					placeholder = "비밀번호를 입력하세용">
+		<br/>
+		<label>선호 애완동물</label>
+		<input type = "checkbox" name = "pet" value = "dog"/>개
+		<input type = "checkbox" name = "pet" value = "cat"/>고양이
+		<input type = "checkbox" name = "pet" value = "cow"/>소
+			<br/>
+		<label>성별</label>
+		<input type = "radio" name = "gender" value = "f"/>여성
+		<input type = "radio" name = "pet" value = "m"/>남성
+		
+			<br/>
+		<label>사용 통신사</label>
+		<select name = "telecom">
+			<option value = "SKT">SKT</option>
+			<option value = "KT">KT</option>
+			<option value = "U+">U+</option>
+		</select>
+		<!-- 폼을 서버로 전송 -->
+		<input type="submit" vlaue = "전송">
+		<!-- 다시 작성 -->
+		<input type="reset" vlaue = "다시 작성">
+		
+		</form>
+		
+		<a href = "index.html">가입서류 작성</a>
+
+</body>
+</html>
